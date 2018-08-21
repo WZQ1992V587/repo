@@ -3,3 +3,4 @@ EUREKA_PORT: 8761
 DATASOURCE_URL: jdbc:mysql://10.16.161.3:3306/ag_admin_v1?useUnicode=true&characterEncoding=UTF8
 DATASOURCE_USERNAME: root
 DATASOURCE_PASSWORD: 123456
+STR: str
