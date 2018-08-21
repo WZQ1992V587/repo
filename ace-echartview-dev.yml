@@ -1,0 +1,85 @@
+spring_jackson_date-format: yyyy-MM-dd HH:mm:ss
+spring_jackson_time-zone: GMT+8
+spring_jackson_default-property-inclusion: non_null
+spring_datasource_name: test
+spring_datasource_url: jdbc:mysql://219.239.169.107:3306/xinyuan-dbbi?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+spring_datasource_username: biuser
+spring_datasource_password: Biuser!@#123
+spring_datasource_type: com.alibaba.druid.pool.DruidDataSource
+spring_datasource_driver-class-name: com.mysql.jdbc.Driver
+spring_datasource_filters: stat
+spring_datasource_maxActive: 20
+spring_datasource_initialSize: 1
+spring_datasource_maxWait: 60000
+spring_datasource_minIdle: 1
+spring_datasource_timeBetweenEvictionRunsMillis: 60000
+spring_datasource_minEvictableIdleTimeMillis: 300000
+spring_datasource_validationQuery: select 'x'
+spring_datasource_testWhileIdle: true
+spring_datasource_testOnBorrow: false
+spring_datasource_testOnReturn: false
+spring_datasource_poolPreparedStatements: true
+spring_datasource_maxOpenPreparedStatements: 20
+spring_bus_trace_enabled: true
+spring_sleuth_enabled: true
+spring_sleuth_http_legacy_enabled: true
+spring_rabbitmq_host: 10.16.161.40
+spring_rabbitmq_port: 5672
+spring_rabbitmq_username: cloud
+spring_rabbitmq_password: cloud
+
+
+sample_zipkin_enabled: false
+
+mybatis_basepackage: com.dataview.dao
+mybatis_xmlLocation: classpath:mapper/**/*.xml
+mybatis_mapper-locations: "classpath:mapper/*sqlmap.xml"
+mybatis_type-aliases-package: com.dataview.domain
+
+server_port: 8090
+
+feign_httpclient_enabled: false
+feign_okhttp_enabled: true
+
+ribbon_ServerListRefreshInterval: 5000
+ribbon_eureka_enabled: true
+ribbon_ReadTimeout: 100000
+ribbon_ConnectTimeout: 100000
+ribbon_MaxAutoRetries: 0
+ribbon_MaxAutoRetriesNextServer: 1
+ribbon_OkToRetryOnAllOperations: false
+
+hystrix_threadpool_default_coreSize: 1000
+hystrix_threadpool_default_maxQueueSize: 1000
+hystrix_threadpool_default_queueSizeRejectionThreshold: 500
+hystrix_command_default_execution_isolation_thread_timeoutInMilliseconds: 110000
+
+swagger_enabled: true
+swagger_base-package: com.dataview
+swagger_title: ace-echartview
+swagger_version: 1.0.0.SNAPSHOT
+swagger_description: \u7BA1\u7406\u540E\u7AEF\u670D\u52A1
+swagger_contact_name: admin
+
+auth_serviceId: ace-auth
+auth_url: http://10.16.161.7:9777
+auth_user_token-header: Authorization
+auth_client_id: ace-echartview
+auth_client_secret: 123456
+auth_client_token-header: x-client-token
+
+redis_pool_maxActive: 300
+redis_pool_maxIdle: 100
+redis_pool_maxWait: 1000
+redis_host: 10.16.161.32
+redis_port: 6379
+redis_password: 
+redis_timeout: 2000
+redis_sysName: ace-echartview
+redis_enable: true
+redis_database: 0
+
+EUREKA_HOST: localhost
+EUREKA_PORT: 8761
+
+
